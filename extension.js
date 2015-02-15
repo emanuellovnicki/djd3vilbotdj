@@ -55,7 +55,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "basicBot",
         language: "english",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/emanuellovnicki/djd3vilbotdj/master/lang/en.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
@@ -68,22 +68,22 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
+        voteSkip: true,
         voteSkipLimit: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 5,
         autodisable: true,
         commandCooldown: 30,
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["theme", "Ova pjesma se ne uklapa u sobu tema. "],
+            ["op", "Ova pjesma je na popisu OP. "],
+            ["history", "Ova pjesma je u povijesti. "],
+            ["mix", "Igrao si mix, koji je protiv pravila. "],
+            ["sound", "Pjesma koju je igrao imao lošu kvalitetu zvuka ili bez zvuka. "],
+            ["nsfw", "Pjesma koju je sadržavala je NSFW (slika i zvuk). "],
+            ["unavailable", "Pjesma koju si pustio nije bila dostupna za neke korisnike. "]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
@@ -110,6 +110,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/Yemasthui/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/emanuellovnicki/djd3vilbotdj/master/basicBot.js', extend);
 
 }).call(this);
